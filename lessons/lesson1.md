@@ -1,10 +1,23 @@
 ---
 layout: lessons
 title: Lesson 1
+sections:
+  - id: introduction
+    title: Introduction
+  - id: main-content
+    title: Main Content
+  - id: conclusion
+    title: Conclusion
 ---
 
-# Lesson 1
+## Introduction {#introduction}
 
-Content for lesson 1.
+This is the introduction for lesson 1.
 
-[Download the Jupyter Notebook](./notebooks/lesson1.ipynb)
+## Main Content {#main-content}
+
+This is the main content for lesson 1.
+
+## Conclusion {#conclusion}
+
+This is the conclusion for lesson 1.
