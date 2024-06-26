@@ -13,12 +13,20 @@
         <li><a href="{{ '/about/' | relative_url }}">About</a></li>
         <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
         <li><a href="{{ '/setup/' | relative_url }}">Setup Instructions</a></li>
-        <li><a href="{{ '/lessons/' | relative_url }}">Lessons</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    {{ content }}
-  </main>
+  <div class="page-with-sidebar">
+    <aside class="sidebar">
+      <h2>Lessons</h2>
+      <ul>
+        <li><a href="{{ '/lessons/lesson1.md' | relative_url }}">Lesson 1</a></li>
+        <li><a href="{{ '/lessons/lesson2.md' | relative_url }}">Lesson 2</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
 </body>
 </html>
