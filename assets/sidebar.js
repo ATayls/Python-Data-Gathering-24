@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (!lessonLink) return;
 
-  let lastInsertedSectionLink = lessonLink.parentNode;
+  let lastInsertedLink = lessonLink.parentNode;
 
   sections.forEach(section => {
     const sectionId = section.id;
     const sectionTitle = section.innerText;
     const sectionLink = document.createElement("li");
     sectionLink.innerHTML = `<a href="#${sectionId}" class="section-link">${sectionTitle}</a>`;
-    lastInsertedSectionLink.insertAdjacentElement('afterend', sectionLink);
-    lastInsertedSectionLink = sectionLink;
+    lastInsertedLink.insertAdjacentElement('afterend', sectionLink);
+    lastInsertedLink = sectionLink;
   });
 });
