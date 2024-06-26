@@ -22,23 +22,23 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1.5rem; /* Increased margin for more spacing */
+  margin: 0 1.5rem;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem; /* Increased font size */
-  padding: 0.5rem 1rem; /* Added padding */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #CFD4D8; /* Background change on hover */
+  background-color: #CFD4D8;
   color: #fff;
-  text-decoration: none; /* No underline on hover */
+  text-decoration: none;
 }
 
 .page-with-sidebar {
@@ -75,15 +75,19 @@ nav ul li a:hover {
 .sidebar ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem; /* Added padding for better click area */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
-  background-color: #CFD4D8; /* Background change on hover */
+  background-color: #CFD4D8;
   color: #fff;
-  text-decoration: none; /* No underline on hover */
+  text-decoration: none;
+}
+
+.sidebar ul li .section-link {
+  padding-left: 1.5rem;
 }
 
 .content {
