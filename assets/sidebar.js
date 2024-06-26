@@ -14,11 +14,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const lessonList = sidebar.querySelector("ul");
 
+  let lessonLink;
+  lessonList.querySelectorAll("a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      lessonLink = link;
+    }
+  });
+
+  if (!lessonLink) return;
+
+  let lastInsertedSectionLink = lessonLink.parentNode;
+
   sections.forEach(section => {
     const sectionId = section.id;
     const sectionTitle = section.innerText;
     const sectionLink = document.createElement("li");
     sectionLink.innerHTML = `<a href="#${sectionId}" class="section-link">${sectionTitle}</a>`;
-    lessonList.appendChild(sectionLink);
+    lastInsertedSectionLink.insertAdjacentElement('afterend', sectionLink);
+    lastInsertedSectionLink = sectionLink;
   });
 });
