@@ -75,10 +75,15 @@ nav ul li a:hover {
 .sidebar ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 0.5rem 1rem; /* Added padding for better click area */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 .sidebar ul li a:hover {
-  text-decoration: underline;
+  background-color: #575757; /* Background change on hover */
+  color: #fff;
+  text-decoration: none; /* No underline on hover */
 }
 
 .content {
