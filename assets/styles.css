@@ -22,17 +22,23 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 1.5rem; /* Increased margin for more spacing */
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem; /* Increased font size */
+  padding: 0.5rem 1rem; /* Added padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #575757; /* Background change on hover */
+  color: #fff;
+  text-decoration: none; /* No underline on hover */
 }
 
 .page-with-sidebar {
