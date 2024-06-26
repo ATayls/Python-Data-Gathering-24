@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const sidebar = document.getElementById("sidebar");
   if (!sidebar) return;
 
-  const currentPage = window.location.pathname;
-  const lessonPages = ["/lessons/lesson1/", "/lessons/lesson2/"];
+  const baseurl = document.querySelector('meta[name="baseurl"]').getAttribute('content');
+  const currentPage = window.location.pathname.replace(baseurl, '');
+  const lessonPages = [`${baseurl}/lessons/lesson1/`, `${baseurl}/lessons/lesson2/`];
   if (!lessonPages.includes(currentPage)) return;
 
   const content = document.querySelector(".content");

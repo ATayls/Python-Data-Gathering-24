@@ -1,8 +1,13 @@
 # General
 title: Data Gathering Workshop
 description: A workshop on data gathering
-baseurl: "/data-gathering-workshop"
+baseurl: "/Python-Data-Gathering-24"
 
 # Build settings
 theme: jekyll-theme-minimal
 markdown: kramdown
+
+# Permalinks
+# lessons/lesson1.md will have the URL /lessons/lesson1/
+# removes need for .html extensions.
+permalink: /:categories/:title/
