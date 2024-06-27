@@ -41,6 +41,30 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.site-name a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-name a:hover {
+  color: #CFD4D8;
+}
+
 .page-with-sidebar {
   display: flex;
   max-width: 1200px;
