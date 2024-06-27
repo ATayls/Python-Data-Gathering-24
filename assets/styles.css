@@ -120,7 +120,23 @@ nav ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Insert a h2 underline */
+.content h2::after {
+    content: "";
+    display: block;
+    margin-top: 10px; /* Adjust as needed */
+    border-bottom: 1px solid #000; /* Adjust color, width, and style as needed */
+}
+
 h1 {
   color: #333;
   text-align: center;
+}
+
+/* styling for code blocks */
+pre {
+    border-top: 10px solid #3dcbf8;
+    border-bottom: 10px solid #3dcbf8;
+    padding: 20px;
+    background-color: #f1f3f5;
 }
