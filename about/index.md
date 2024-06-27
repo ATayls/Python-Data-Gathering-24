@@ -3,7 +3,7 @@ layout: default
 title: About
 ---
 
-# About the Workshop
+# Data Gathering with Python
 
 Welcome to the **Data Gathering with Python** workshop!
 
