@@ -19,6 +19,7 @@ The workshop will take place at the:
 Level 6, Room E06 - Digital Research Space  
 University Park
 
+See the campus map for directions:
 [Campus Map](https://www.nottingham.ac.uk/sharedresources/documents/mapuniversitypark.pdf)
 
 ## Schedule
