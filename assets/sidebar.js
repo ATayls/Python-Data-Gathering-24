@@ -4,13 +4,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const baseurl = document.querySelector('meta[name="baseurl"]').getAttribute('content');
   const currentPage = window.location.pathname.replace(baseurl, '');
-  const lessonPages = [`${baseurl}/lessons/lesson1/`, `${baseurl}/lessons/lesson2/`];
+  const lessonPages = [
+      `${baseurl}/lessons/lesson1/`, `${baseurl}/lessons/lesson2/`, `${baseurl}/lessons/lesson2/`, `${baseurl}/lessons/lesson3/`,
+      `${baseurl}/lessons/lesson4/`, `${baseurl}/lessons/lesson5/`, `${baseurl}/lessons/lesson6/`, `${baseurl}/lessons/lesson7/`,
+      `${baseurl}/lessons/lesson8/`, `${baseurl}/lessons/lesson9/`, `${baseurl}/lessons/lesson10/`
+  ];
   if (!lessonPages.includes(currentPage)) return;
 
   const content = document.querySelector(".content");
   if (!content) return;
 
-  const sections = content.querySelectorAll("h2, h3, h4, h5, h6");
+  const sections = content.querySelectorAll("h2");
   if (sections.length === 0) return;
 
   const lessonList = sidebar.querySelector("ul");

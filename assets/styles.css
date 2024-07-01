@@ -128,15 +128,74 @@ nav ul li a:hover {
     border-bottom: 1px solid #000; /* Adjust color, width, and style as needed */
 }
 
+/* Insert a h2 and h3 break 3 lines before */
+.content h2::before,
+.content h3::before {
+    content: "";
+    display: block;
+    margin-top: 4rem; /* Adjust as needed */
+}
+
 h1 {
   color: #333;
   text-align: center;
 }
 
-/* styling for code blocks */
-pre {
+/* styling for python code blocks */
+.language-python pre {
     border-top: 10px solid #3dcbf8;
-    border-bottom: 10px solid #3dcbf8;
     padding: 20px;
     background-color: #f1f3f5;
 }
+
+/* styling for bash code blocks */
+.language-plaintext pre {
+    border-top: 10px solid #383838;
+    padding: 20px;
+    background-color: #f1f3f5;
+}
+
+/* styling for html code blocks */
+.language-html pre {
+    border-top: 10px solid #f16529;
+    padding: 20px;
+    background-color: #f1f3f5;
+}
+
+/* styling for tables within content */
+/* Modern colours and stlye */
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.content th, .content td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+}
+
+.content tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.content td {
+    color: #555;
+}
+/* end of styling for tables within content */
