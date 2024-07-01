@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const baseurl = document.querySelector('meta[name="baseurl"]').getAttribute('content');
   const currentPage = window.location.pathname.replace(baseurl, '');
   const lessonPages = [
-      `${baseurl}/lessons/lesson1/`, `${baseurl}/lessons/lesson2/`, `${baseurl}/lessons/lesson2/`, `${baseurl}/lessons/lesson3/`,
+      `${baseurl}/lessons/lesson1/`, `${baseurl}/lessons/lesson2/`, `${baseurl}/lessons/lesson3/`,
       `${baseurl}/lessons/lesson4/`, `${baseurl}/lessons/lesson5/`, `${baseurl}/lessons/lesson6/`, `${baseurl}/lessons/lesson7/`,
       `${baseurl}/lessons/lesson8/`, `${baseurl}/lessons/lesson9/`, `${baseurl}/lessons/lesson10/`
   ];
